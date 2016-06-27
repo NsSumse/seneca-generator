@@ -1,32 +1,17 @@
 {
-  "name": "koa-react-full-example",
-  "version": "0.6.1",
-  "description": "Full example using Koa, React, Passport, Mongoose, Gulp, Mocha",
-  "main": "server.js",
+  "name": "seneca-generator",
+  "version": "0.0.1",
+  "description": "seneca with generators",
+  "main": "seneca.js",
   "repository": {},
-  "scripts": {
-    "start": "NODE_ENV=development ./node_modules/.bin/nodemon --harmony server.js",
-    "prod": "npm run build && NODE_ENV=production node --harmony server.js",
-    "build": "NODE_ENV=production webpack --config webpack.config.js --separate-stylesheet -p --progress --profile --colors",
-    "hot-dev-server": "webpack-dev-server --content-base public -ds --config webpack.config.js --hot --progress --colors --inline",
-    "dev-server": "npm run hot-dev-server",
-    "test": "npm run base-test && npm run lint",
-    "base-test": "NODE_ENV=test ./node_modules/.bin/mocha --harmony --reporter spec ./test/test-*.js",
-    "lint": "eslint src app test webpack config lib server.js webpack.config.js"
-  },
-  "author": "Hugo Dozois <hugo@dozoisch.com>",
+  "author": "Stefan Duesing <stefanduesing@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=0.12.0",
-    "iojs": ">=1.6.0"
+    "node": ">=0.11.0"
   },
   "dependencies": {
     "bluebird": "^3.4.1",
-    "co": "^4.6.0",
-    "mongoose": "^4.5.2",
-    "seneca": "^2.1.0",
-    "thunks": "^4.2.2",
-    "asd" : "ssh://duesing_s@nssumsebrumm.ddns.net:23/volume1/git/angular2-fuge"
+    "seneca": "^2.1.0"
   },
   "devDependencies": {}
 }
