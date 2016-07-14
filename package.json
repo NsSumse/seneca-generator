@@ -1,6 +1,6 @@
 {
   "name": "seneca-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "seneca with generators",
   "main": "seneca.js",
   "repository": {},
@@ -10,8 +10,7 @@
     "node": ">=0.11.0"
   },
   "dependencies": {
-    "bluebird": "^3.4.1",
-    "seneca": "^2.1.0"
+    "bluebird": "^3.4.1"
   },
   "devDependencies": {}
 }
