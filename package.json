@@ -1,6 +1,6 @@
 {
   "name": "seneca-generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "seneca with generators",
   "main": "seneca.js",
   "repository": {},
