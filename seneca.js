@@ -7,7 +7,7 @@ function asyncifySeneca(seneca) {
     seneca.addAsync = function addAsync(props, func) {
         seneca.add(props, function (args, done) {
             Promise.coroutine(func)(args).then(function (res) {
-                if (res.toJSON) {
+                if (res && res.toJSON) {
                     done(null, {ok: true, result: res.toJSON()});
                 } else {
                     done(null, {ok: true, result: res});
